@@ -1,0 +1,54 @@
+@import "_generals.scss";
+@import "_mixin.scss";
+@import "_variables.scss";
+// sass --watch assets/scss/main.scss assets/css/style.css
+body {
+    background: linear-gradient($linear-gradient);
+    height: 100vh;
+    padding: 5vh 3%;
+    font-family: sans-serif;
+    i {
+        font-size: $icon-size;
+    }
+    section {
+        text-align: center;
+        margin: 10vh 0;
+        padding: 10vh 0;
+        color: #fff;
+        position: relative;
+        div {
+            width: 150px;
+            height: 150px;
+            border: #fff 1px solid;
+            border-radius: 50%;
+            background-color: $color-two;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 80%;
+            top: 2%;
+            p {
+                font-size: 3rem;
+            }
+        }
+        h1 {
+            font-size: 12rem;
+        }
+        h2 {
+            font-size: 5rem;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    }
+    footer {
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+            li {
+                list-style: none;
+            }
+        }
+    }
+}
